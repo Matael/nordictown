@@ -1,6 +1,6 @@
 \documentclass[10pt]{beamer}
 
-\usetheme{metropolis}
+\usetheme[progressbar=frametitle]{nordictown}
 \usepackage{appendixnumberbeamer}
 
 \usepackage{booktabs}
@@ -10,13 +10,13 @@
 \usepgfplotslibrary{dateplot}
 
 \usepackage{xspace}
-\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\newcommand{\themename}{\textbf{\textsc{NordicTown}}\xspace}
 
-\title{Metropolis}
-\subtitle{A modern beamer theme}
+\title{NordicTown}
+\subtitle{A nordish, minimalistic beamer theme}
 \date{\today}
-\author{Matthias Vogelgesang}
-\institute{Center for modern beamer themes}
+\author{Mathieu Gaborit}
+\institute{Somewhere over the rainbow}
 % \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
 
 \begin{document}
@@ -33,15 +33,15 @@
 \begin{frame}[fragile]{Metropolis}
 
   The \themename theme is a Beamer theme with minimal visual noise
-  inspired by the \href{https://github.com/hsrmbeamertheme/hsrmbeamertheme}{\textsc{hsrm} Beamer
-  Theme} by Benjamin Weiss.
+	based on the \href{https://github.com/matze/mtheme}{Metropolis Beamer Theme} by Matthias
+	Vogelgesang.
 
   Enable the theme by loading
 
   \begin{verbatim}    \documentclass{beamer}
-    \usetheme{metropolis}\end{verbatim}
+		\usetheme{nordictown}\end{verbatim}
 
-  Note, that you have to have Mozilla's \emph{Fira Sans} font and XeTeX
+	Note, that you have to have \emph{Nunito Sans} font and XeTeX
   installed to enjoy this wonderful typography.
 \end{frame}
 \begin{frame}[fragile]{Sections}
@@ -52,53 +52,6 @@
   for which \themename provides a nice progress indicator \ldots
 \end{frame}
 
-\section{Title formats}
-
-\begin{frame}{Metropolis title formats}
-	\themename supports 4 different title formats:
-	\begin{itemize}
-		\item Regular
-		\item \textsc{Small caps}
-		\item \textsc{all small caps}
-		\item ALL CAPS
-	\end{itemize}
-	They can either be set at once for every title type or individually.
-\end{frame}
-
-{
-    \metroset{titleformat frame=smallcaps}
-\begin{frame}{Small caps}
-	This frame uses the \texttt{smallcaps} title format.
-
-	\begin{alertblock}{Potential Problems}
-		Be aware that not every font supports small caps. If for example you typeset your presentation with pdfTeX and the Computer Modern Sans Serif font, every text in small caps will be typeset with the Computer Modern Serif font instead.
-	\end{alertblock}
-\end{frame}
-}
-
-{
-\metroset{titleformat frame=allsmallcaps}
-\begin{frame}{All small caps}
-	This frame uses the \texttt{allsmallcaps} title format.
-
-	\begin{alertblock}{Potential problems}
-		As this title format also uses small caps you face the same problems as with the \texttt{smallcaps} title format. Additionally this format can cause some other problems. Please refer to the documentation if you consider using it.
-
-		As a rule of thumb: just use it for plaintext-only titles.
-	\end{alertblock}
-\end{frame}
-}
-
-{
-\metroset{titleformat frame=allcaps}
-\begin{frame}{All caps}
-	This frame uses the \texttt{allcaps} title format.
-
-	\begin{alertblock}{Potential Problems}
-		This title format is not as problematic as the \texttt{allsmallcaps} format, but basically suffers from the same deficiencies. So please have a look at the documentation if you want to use it.
-	\end{alertblock}
-\end{frame}
-}
 
 \section{Elements}
 
@@ -117,7 +70,6 @@ or show \textbf{bold} results.\end{verbatim}
   \begin{itemize}
     \item Regular
     \item \textit{Italic}
-    \item \textsc{Small Caps}
     \item \textbf{Bold}
     \item \textbf{\textit{Bold Italic}}
     \item \textbf{\textsc{Bold Small Caps}}
@@ -299,13 +251,15 @@ or show \textbf{bold} results.\end{verbatim}
 
   Get the source of this theme and the demo presentation from
 
-  \begin{center}\url{github.com/matze/mtheme}\end{center}
+	\begin{center}\url{github.com/matael/nordictown}\end{center}
 
   The theme \emph{itself} is licensed under a
   \href{http://creativecommons.org/licenses/by-sa/4.0/}{Creative Commons
   Attribution-ShareAlike 4.0 International License}.
 
   \begin{center}\ccbysa\end{center}
+
+	Based on Metropolis theme by M. Vogelgesang
 
 \end{frame}
 
